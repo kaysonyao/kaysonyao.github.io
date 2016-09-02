@@ -5,4 +5,4 @@ comments: true
 permalink: /404
 fancybox: false
 ---
-  <span class="post-count"><%= totalcount(site) %></span>
+累积字数：   <span class="post-count">{{ totalcount(site, '0,0.0a') }}</span>字
