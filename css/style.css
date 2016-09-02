@@ -686,8 +686,9 @@ a {
 #header .switch-area {
   position: relative;
   width: 100%;
-  overflow: hidden;
-  min-height: 260px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 230px;
   font-size: 0.875rem;
 }
 #header .switch-area .switch-wrap {
@@ -2514,7 +2515,7 @@ pre .javascript .function {
 }
 .switch-btn {
   margin: 0 auto;
-  margin-top: 23px;
+  margin-top: 5px;
   position: relative;
   width: 70px;
   text-align: center;
@@ -3013,7 +3014,7 @@ pre .javascript .function {
 .search {
   width: 68%;
   height: 18px;
-  margin-top: 1px;
+  margin-top: 10px;
   padding: 0;
   font-family: inherit;
   border: 2px solid transparent;
