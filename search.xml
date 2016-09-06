@@ -6,7 +6,8 @@
     <entry>
       <title><![CDATA[Hexo更换电脑后配置更新]]></title>
       <url>http://yoursite.com/2016/09/06/Hexo%E6%9B%B4%E6%8D%A2%E7%94%B5%E8%84%91%E5%90%8E%E9%85%8D%E7%BD%AE%E6%9B%B4%E6%96%B0/</url>
-      <content type="html"><![CDATA[<h2 id="创建GitHub分支"><a href="#创建GitHub分支" class="headerlink" title="创建GitHub分支"></a>创建GitHub分支</h2><h2 id="重新发布更新"><a href="#重新发布更新" class="headerlink" title="重新发布更新"></a>重新发布更新</h2><p>在本地新拷贝的hexo文件夹下通过Git bash依次执行下列指令：</p>
+      <content type="html"><![CDATA[<p>更换电脑后重新编写博客<br><a id="more"></a></p>
+<h2 id="创建GitHub分支"><a href="#创建GitHub分支" class="headerlink" title="创建GitHub分支"></a>创建GitHub分支</h2><h2 id="重新发布更新"><a href="#重新发布更新" class="headerlink" title="重新发布更新"></a>重新发布更新</h2><p>在本地新拷贝的hexo文件夹下通过Git bash依次执行下列指令：</p>
 <ul>
 <li>npm install hexo</li>
 <li>npm install</li>
