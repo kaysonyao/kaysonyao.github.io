@@ -1,0 +1,8 @@
+---
+title: 404 NOT FOUND
+date: 2016-09-01 17:11:19
+comments: true
+permalink: /404
+fancybox: false
+---
+累积字数：   <span class="post-count">{{ totalcount(site, '0,0.0a') }}</span>字
