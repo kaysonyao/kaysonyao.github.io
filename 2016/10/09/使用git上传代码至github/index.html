@@ -15,13 +15,22 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="将新建的代码上传至github">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用Git上传代码至GitHub">
+<meta property="og:url" content="http://yoursite.com/2016/10/09/使用git上传代码至github/index.html">
 <meta property="og:site_name" content="Kayson's Blog">
-<meta property="og:updated_time" content="2016-09-01T06:02:41.422Z">
+<meta property="og:description" content="将新建的代码上传至github">
+<meta property="og:image" content="http://yoursite.com/img/create_repository.jpg">
+<meta property="og:image" content="http://yoursite.com/img/test1_repository.jpg">
+<meta property="og:image" content="http://yoursite.com/img/gitpull.jpg">
+<meta property="og:image" content="http://yoursite.com/img/gitpush.jpg">
+<meta property="og:image" content="http://yoursite.com/img/uploadcode.jpg">
+<meta property="og:updated_time" content="2016-10-09T03:18:11.555Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
+<meta name="twitter:title" content="使用Git上传代码至GitHub">
+<meta name="twitter:description" content="将新建的代码上传至github">
+<meta name="twitter:image" content="http://yoursite.com/img/create_repository.jpg">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -53,7 +62,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>about | Kayson&#39;s Blog</title>
+<title>使用Git上传代码至GitHub | Kayson&#39;s Blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -63,7 +72,7 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -291,13 +300,22 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-使用git上传代码至github" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/about/index.html" class="article-date">
-      <time datetime="2016-09-01T06:02:41.000Z" itemprop="datePublished">2016-09-01</time>
+      <a href="/2016/10/09/使用git上传代码至github/" class="article-date">
+      <time datetime="2016-10-09T02:51:29.184Z" itemprop="datePublished">2016-10-09</time>
 </a>
 
+ 
+    <a href="/2016/10/09/使用git上传代码至github/#comments" title="Comments">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count" ></span>
+        
+        
+    </a>
 
     </div>
   
@@ -310,7 +328,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      使用Git上传代码至GitHub
     </h1>
   
 
@@ -318,8 +336,16 @@
       
       <div class="article-info article-info-post">
         
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Git/">Git</a>
+    </div>
+
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/">Git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub/">GitHub</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -327,36 +353,84 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta { display: none; }
-    #container .article .article-title { padding-right: 0; }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover { border-left: none; }
-    .article-title { font-size: 1.6em }
-    .article-entry hr { margin: 0;}
-    .article-meta,
-    #container .article-info-post.article-info { display: none;}
-    #container .article .article-title { padding: 0; }
-</style>
+        <p>将新建的代码上传至github<br><a id="more"></a></p>
+<p>####第一步：建立git仓库<br>cd到你的本地项目根目录下，执行git命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure>
+<p>####第二步：将项目的所有文件添加到仓库中<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure></p>
+<p><strong>如果想添加某个特定的文件，只需把.换成特定的文件名即可</strong></p>
+<p>####第三步：将add的文件commit到仓库<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">"注释语句"</span></div></pre></td></tr></table></figure></p>
+<p>####第四步：去github上创建自己的Repository，创建页面如下图所示：<br><img src="/img/create_repository.jpg" alt="create_repository"></p>
+<p><strong>点击下面的Create repository，就会进入到类似下面的一个页面,如下图所示：</strong></p>
+<p><img src="/img/test1_repository.jpg" alt="test1_repository"></p>
+<p><strong>点击右侧Clone or download 按钮，下面红色框里的地址就是创建的仓库的地址</strong></p>
+<p>####第五步：将本地的仓库关联到github上<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add origin git@github.com:kaysonyao/<span class="built_in">test</span>1.git</div></pre></td></tr></table></figure></p>
+<p><strong>origin后面的链接地址换成你自己的仓库url地址，也就是上面红框中标出来的地址</strong></p>
+<p>####第六步：上传github之前，要先pull一下，执行如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull origin master</div></pre></td></tr></table></figure></p>
+<p><strong>敲回车后，会执行输出类似如下页面 </strong></p>
+<p><img src="/img/gitpull.jpg" alt="gitpull"></p>
+<p>####第七步：上传代码到github远程仓库<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push -u origin master</div></pre></td></tr></table></figure></p>
+<p><strong>执行完后，如果没有异常，等待执行完就上传成功了，中间可能会让你输入Username和Password，你只要输入github的账号和密码就行了</strong></p>
+<p><img src="/img/gitpush.jpg" alt="gitpush"><br><img src="/img/uploadcode.jpg" alt="uploadcode"></p>
 
-
-          
-        
       
     </div>
     
   </div>
   
     
+    <div class="copyright">
+        <p><span>Title:</span><a href="/2016/10/09/使用git上传代码至github/">使用Git上传代码至GitHub</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">Mr. Kayson</a></p>
+        <p><span>Created:</span>2016-10-09, 10:51:29</p>
+        <p><span>Updated:</span>2016-10-09, 11:18:11</p>
+        <p>
+            <span>Full URL:</span><a class="post-url" href="/2016/10/09/使用git上传代码至github/" title="使用Git上传代码至GitHub">http://yoursite.com/2016/10/09/使用git上传代码至github/</a>
+            <span class="copy-path" data-clipboard-text="From http://yoursite.com/2016/10/09/使用git上传代码至github/　　By Mr. Kayson" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
+        </p>
+    </div>
 
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/09/06/Hexo更换电脑后配置更新/">
+                    Hexo更换电脑后配置更新
+                </a>
+            </div>
+        
+    </nav>
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+            
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
+
+    <script>
+        yiliaConfig.toc = ["Hide", "Show", !!"false"];
+    </script>
 
 
 
@@ -374,7 +448,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"about　| Kayson's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"使用Git上传代码至GitHub　| Kayson's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -390,7 +464,7 @@
     
       <div class="duoshuo" id="comments">
     <div id="comment-box" ></div>
-    <div class="ds-thread" id="ds-thread" data-thread-key="about/index.html" data-title="about" data-url="http://yoursite.com/about/index.html"></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/10/09/使用git上传代码至github/" data-title="使用Git上传代码至GitHub" data-url="http://yoursite.com/2016/10/09/使用git上传代码至github/"></div>
     <script>
         var duoshuoQuery = {short_name:"kayson"};
         var loadComment = function(){
@@ -403,7 +477,7 @@
         
             // Add comment count
             $(function(){ 
-                var jsonUrl = "http://api.duoshuo.com/threads/counts.jsonp?short_name=kayson&threads=about/index.html&callback=?";
+                var jsonUrl = "http://api.duoshuo.com/threads/counts.jsonp?short_name=kayson&threads=2016/10/09/使用git上传代码至github/&callback=?";
                 $.getJSON(jsonUrl, function(result){
                     $.each(result.response, function(i, field){
                         var value = field.comments;
@@ -445,6 +519,24 @@
 </div>
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
+        
+
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/09/06/Hexo更换电脑后配置更新/" title="Next: Hexo更换电脑后配置更新">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/10/09/使用git上传代码至github/">使用Git上传代码至GitHub</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/06/Hexo更换电脑后配置更新/">Hexo更换电脑后配置更新</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/06/使用GitHub搭建Hexo博客/">使用GitHub搭建Hexo博客</a></li></ul>
 
 
 

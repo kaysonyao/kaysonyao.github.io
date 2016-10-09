@@ -4,6 +4,30 @@
   
     
     <entry>
+      <title><![CDATA[使用Git上传代码至GitHub]]></title>
+      <url>http://yoursite.com/2016/10/09/%E4%BD%BF%E7%94%A8git%E4%B8%8A%E4%BC%A0%E4%BB%A3%E7%A0%81%E8%87%B3github/</url>
+      <content type="html"><![CDATA[<p>将新建的代码上传至github<br><a id="more"></a></p>
+<p>####第一步：建立git仓库<br>cd到你的本地项目根目录下，执行git命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure>
+<p>####第二步：将项目的所有文件添加到仓库中<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure></p>
+<p><strong>如果想添加某个特定的文件，只需把.换成特定的文件名即可</strong></p>
+<p>####第三步：将add的文件commit到仓库<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">"注释语句"</span></div></pre></td></tr></table></figure></p>
+<p>####第四步：去github上创建自己的Repository，创建页面如下图所示：<br><img src="/img/create_repository.jpg" alt="create_repository"></p>
+<p><strong>点击下面的Create repository，就会进入到类似下面的一个页面,如下图所示：</strong></p>
+<p><img src="/img/test1_repository.jpg" alt="test1_repository"></p>
+<p><strong>点击右侧Clone or download 按钮，下面红色框里的地址就是创建的仓库的地址</strong></p>
+<p>####第五步：将本地的仓库关联到github上<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add origin git@github.com:kaysonyao/<span class="built_in">test</span>1.git</div></pre></td></tr></table></figure></p>
+<p><strong>origin后面的链接地址换成你自己的仓库url地址，也就是上面红框中标出来的地址</strong></p>
+<p>####第六步：上传github之前，要先pull一下，执行如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull origin master</div></pre></td></tr></table></figure></p>
+<p><strong>敲回车后，会执行输出类似如下页面 </strong></p>
+<p><img src="/img/gitpull.jpg" alt="gitpull"></p>
+<p>####第七步：上传代码到github远程仓库<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push -u origin master</div></pre></td></tr></table></figure></p>
+<p><strong>执行完后，如果没有异常，等待执行完就上传成功了，中间可能会让你输入Username和Password，你只要输入github的账号和密码就行了</strong></p>
+<p><img src="/img/gitpush.jpg" alt="gitpush"><br><img src="/img/uploadcode.jpg" alt="uploadcode"></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Hexo更换电脑后配置更新]]></title>
       <url>http://yoursite.com/2016/09/06/Hexo%E6%9B%B4%E6%8D%A2%E7%94%B5%E8%84%91%E5%90%8E%E9%85%8D%E7%BD%AE%E6%9B%B4%E6%96%B0/</url>
       <content type="html"><![CDATA[<p>更换电脑后重新编写博客<br><a id="more"></a></p>
