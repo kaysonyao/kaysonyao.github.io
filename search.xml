@@ -5,7 +5,7 @@
     
     <entry>
       <title><![CDATA[使用Git上传代码至GitHub]]></title>
-      <url>http://yoursite.com/2016/10/09/%E4%BD%BF%E7%94%A8Git%E4%B8%8A%E4%BC%A0%E4%BB%A3%E7%A0%81%E8%87%B3GitHub/</url>
+      <url>http://yoursite.com/2016/10/09/%E4%BD%BF%E7%94%A8GitBash%E4%B8%8A%E4%BC%A0%E4%BB%A3%E7%A0%81%E8%87%B3GitHub/</url>
       <content type="html"><![CDATA[<p>将新建的代码上传至github<br><a id="more"></a></p>
 <h4 id="第一步：建立git仓库"><a href="#第一步：建立git仓库" class="headerlink" title="第一步：建立git仓库"></a>第一步：建立git仓库</h4><p>cd到你的本地项目根目录下，执行git命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure>
