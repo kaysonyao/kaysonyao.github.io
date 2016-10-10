@@ -7,8 +7,8 @@
       <title><![CDATA[使用仓库分支管理Hexo网站和代码]]></title>
       <url>http://yoursite.com/2016/10/09/%E4%BD%BF%E7%94%A8%E4%BB%93%E5%BA%93%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86Hexo%E7%BD%91%E7%AB%99%E5%92%8C%E4%BB%A3%E7%A0%81/</url>
       <content type="html"><![CDATA[<p>搭建完Hexo后，一直在同一台PC上更新，想到如果换了电脑就不好继续了。最初的做法是建立新的仓库，将代码放到新仓库，每次修改后hexo d 部署到就仓库，然后push代码到新仓库，虽然不用修改配置，但总觉得GitHub上建了2个Repositories不是很爽，所以使用了同一个repositorie的不同分支来部署Hexo和代码。<br><a id="more"></a></p>
-<p>##前言<br>由于hexo在本地已经安装并且网站已部署到GitHub，而且对git不是很熟，我选择保留本地代码删除重建GitHub上repository</p>
-<h3 id="新建repository"><a href="#新建repository" class="headerlink" title="新建repository"></a>新建repository</h3><p>因为我是删除了原本的repository重头开始，所以这边需要新建一个新的，repository名称部署成功过的都知道，如果不是用二级域名访问，就需要yourname.github.io的形式：<br><img src="/img/createnew.jpg" alt="createnew"><br><em>建议勾上Readme.md，这样默认就创建了master分支</em></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>由于hexo在本地已经安装并且网站已部署到GitHub，而且对git不是很熟，我选择保留本地代码删除重建GitHub上repository</p>
+<h2 id="hexo代码分支操作"><a href="#hexo代码分支操作" class="headerlink" title="hexo代码分支操作"></a>hexo代码分支操作</h2><h3 id="新建repository"><a href="#新建repository" class="headerlink" title="新建repository"></a>新建repository</h3><p>因为我是删除了原本的repository重头开始，所以这边需要新建一个新的，repository名称部署成功过的都知道，如果不是用二级域名访问，就需要yourname.github.io的形式：<br><img src="/img/createnew.jpg" alt="createnew"><br><em>建议勾上Readme.md，这样默认就创建了master分支</em></p>
 <h3 id="本地仓库操作"><a href="#本地仓库操作" class="headerlink" title="本地仓库操作"></a>本地仓库操作</h3><ol>
 <li>打开gitbash，进入hexo目录</li>
 <li><p>建立git仓库</p>
@@ -33,7 +33,35 @@
 <h2 id="修改hexo代码后提交"><a href="#修改hexo代码后提交" class="headerlink" title="修改hexo代码后提交"></a>修改hexo代码后提交</h2><p>依次执行下面语句：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">"..."</span></div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin hexo</div></pre></td></tr></table></figure>
-<h2 id="更换电脑后同步管理"><a href="#更换电脑后同步管理" class="headerlink" title="更换电脑后同步管理"></a>更换电脑后同步管理</h2>]]></content>
+<h2 id="更换电脑后同步管理"><a href="#更换电脑后同步管理" class="headerlink" title="更换电脑后同步管理"></a>更换电脑后同步管理</h2><p><strong>前提：</strong>需要在GitHub上将hexo分支作为Default分支<br><strong>参考资料：</strong><a href="http://blog.yaock.com/2016/10/09/%E4%BD%BF%E7%94%A8%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E7%BB%B4%E6%8A%A4GitHub%E4%BB%A3%E7%A0%81/" title="使用多台电脑维护GitHub代码" target="_blank" rel="external">http://blog.yaock.com/2016/10/09/%E4%BD%BF%E7%94%A8%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E7%BB%B4%E6%8A%A4GitHub%E4%BB%A3%E7%A0%81/</a><br>具体操作步骤如下：</p>
+<ol>
+<li>在电脑2上完成git的安装和配置</li>
+<li>在电脑2上创建SSH Key</li>
+<li>在GitHub上添加新建的SSH Key</li>
+<li>将远程库克隆到本地电脑2上（默认分支为hexo）</li>
+<li>在本地新拷贝的kaysonyao.github.io目录下通过Git bash依次执行下列指令：<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git</div></pre></td></tr></table></figure>
+<p><strong>注：</strong> *不需要hexo init这条指令</p>
+<h2 id="日常修改操作"><a href="#日常修改操作" class="headerlink" title="日常修改操作"></a>日常修改操作</h2><p>在本地对博客进行修改后，通过下面的步骤进行管理：</p>
+<ol>
+<li><p>将最新代码同步至本地,执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull origin hexo</div></pre></td></tr></table></figure>
+</li>
+<li><p>依次执行下面指令，将改动推送到GitHub（此时当前分支应为hexo）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">"注释语句"</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin hexo</div></pre></td></tr></table></figure>
+<ol>
+<li>发布hexo网站到master分支上，执行：<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g <span class="_">-d</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>虽然1、2个过程顺序调转一般不会有问题，不过逻辑上这样的顺序是绝对没问题的<br>（例如突然死机要重装了，悲催….的情况，调转顺序就有问题了）。</p>
+]]></content>
     </entry>
     
     <entry>
