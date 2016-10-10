@@ -89,7 +89,10 @@ npm install hexo-deployer-git
 ```
 ## 日常修改操作
 在本地对博客进行修改后，通过下面的步骤进行管理：
-0. 执行 git pull origin hexo 将最新代码同步至本地
+0. 将最新代码同步至本地,执行：
+```bash
+git pull origin hexo 
+```
 1. 依次执行下面指令，将改动推送到GitHub（此时当前分支应为hexo）
 ```bash
 git add .
@@ -100,7 +103,11 @@ git commit -m "注释语句"
 ```bash
 git push origin hexo
 ```
-2. 执行hexo generate -d发布网站到master分支上。
-
-虽然两个过程顺序调转一般不会有问题，不过逻辑上这样的顺序是绝对没问题的（例如突然死机要重装了，悲催….的情况，调转顺序就有问题了）。
-**注：** *不需要hexo init这条指令*
+**注：** *不需要hexo init这条指令
+2. 发布hexo网站到master分支上，执行：
+```bash
+hexo g -d
+```
+虽然1、2个过程顺序调转一般不会有问题，不过逻辑上这样的顺序是绝对没问题的
+（例如突然死机要重装了，悲催….的情况，调转顺序就有问题了）。
+*
