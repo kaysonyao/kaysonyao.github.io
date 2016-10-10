@@ -87,6 +87,7 @@ npm install
 ```bash
 npm install hexo-deployer-git
 ```
+**注：** *不需要hexo init这条指令
 ## 日常修改操作
 在本地对博客进行修改后，通过下面的步骤进行管理：
 0. 将最新代码同步至本地,执行：
@@ -103,7 +104,6 @@ git commit -m "注释语句"
 ```bash
 git push origin hexo
 ```
-**注：** *不需要hexo init这条指令
 2. 发布hexo网站到master分支上，执行：
 ```bash
 hexo g -d
