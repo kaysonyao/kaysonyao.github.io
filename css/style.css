@@ -2515,7 +2515,7 @@ pre .javascript .function {
 }
 .switch-btn {
   margin: 0 auto;
-  margin-top: 5px;
+  margin-top: 0px;
   position: relative;
   width: 70px;
   text-align: center;
