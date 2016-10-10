@@ -22,7 +22,7 @@
 <meta property="og:site_name" content="Kayson's Blog">
 <meta property="og:description" content="搭建完Hexo后，一直在同一台PC上更新，想到如果换了电脑就不好继续了。最初的做法是建立新的仓库，将代码放到新仓库，每次修改后hexo d 部署到就仓库，然后push代码到新仓库，虽然不用修改配置，但总觉得GitHub上建了2个Repositories不是很爽，所以使用了同一个repositorie的不同分支来部署Hexo和代码。">
 <meta property="og:image" content="http://yoursite.com/img/createnew.jpg">
-<meta property="og:updated_time" content="2016-10-09T09:51:35.271Z">
+<meta property="og:updated_time" content="2016-10-10T00:50:01.066Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用仓库分支管理Hexo网站和代码">
 <meta name="twitter:description" content="搭建完Hexo后，一直在同一台PC上更新，想到如果换了电脑就不好继续了。最初的做法是建立新的仓库，将代码放到新仓库，每次修改后hexo d 部署到就仓库，然后push代码到新仓库，虽然不用修改配置，但总觉得GitHub上建了2个Repositories不是很爽，所以使用了同一个repositorie的不同分支来部署Hexo和代码。">
@@ -202,8 +202,6 @@
                             
                                 <a class="fa Instagram" href="#" title="Instagram"></a>
                             
-                                <a class="fa Flickr" href="#" title="Flickr"></a>
-                            
                         </ul>
                     </nav>
                 </section>
@@ -288,8 +286,6 @@
                             
                                 <a class="fa Instagram" target="_blank" href="#" title="Instagram"></a>
                             
-                                <a class="fa Flickr" target="_blank" href="#" title="Flickr"></a>
-                            
                         </ul>
             </nav>
         </header>                
@@ -373,10 +369,10 @@
 <h3 id="将本地资源同步推到GitHub的Hexo分支（自己创建）"><a href="#将本地资源同步推到GitHub的Hexo分支（自己创建）" class="headerlink" title="将本地资源同步推到GitHub的Hexo分支（自己创建）"></a>将本地资源同步推到GitHub的Hexo分支（自己创建）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin hexo</div></pre></td></tr></table></figure>
 <p><strong>至此hexo代码已经上传至远程仓库的hexo分支</strong></p>
 <h2 id="hexo发布"><a href="#hexo发布" class="headerlink" title="hexo发布"></a>hexo发布</h2><p>hexo发布和之前没有区别，因为没有切换环境，所以不需要重新安装nodejs、hexo等<br>仍然可使用 hexo g -d  来部署<br><strong>注意</strong> _config.yml 文件依旧需要保持原地址和master分支<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">repository: https://github.com/kaysonyao/kaysonyao.github.io.git</div><div class="line">branch: master</div></pre></td></tr></table></figure></p>
-<h2 id="修改hexo代码后提交"><a href="#修改hexo代码后提交" class="headerlink" title="修改hexo代码后提交"></a>修改hexo代码后提交</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure>
+<h2 id="修改hexo代码后提交"><a href="#修改hexo代码后提交" class="headerlink" title="修改hexo代码后提交"></a>修改hexo代码后提交</h2><p>依次执行下面语句：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">"..."</span></div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin hexo</div></pre></td></tr></table></figure>
-
+<h2 id="更换电脑后同步管理"><a href="#更换电脑后同步管理" class="headerlink" title="更换电脑后同步管理"></a>更换电脑后同步管理</h2>
       
     </div>
     
@@ -387,7 +383,7 @@
         <p><span>本文標題:</span><a href="/2016/10/09/使用仓库分支管理Hexo网站和代码/">使用仓库分支管理Hexo网站和代码</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主頁">Mr. Kayson</a></p>
         <p><span>發布時間:</span>2016-10-09, 16:46:31</p>
-        <p><span>最後更新:</span>2016-10-09, 17:51:35</p>
+        <p><span>最後更新:</span>2016-10-10, 08:50:01</p>
         <p>
             <span>原始鏈接:</span><a class="post-url" href="/2016/10/09/使用仓库分支管理Hexo网站和代码/" title="使用仓库分支管理Hexo网站和代码">http://yoursite.com/2016/10/09/使用仓库分支管理Hexo网站和代码/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/10/09/使用仓库分支管理Hexo网站和代码/　　作者: Mr. Kayson" title="點擊複製文章鏈接"><i class="fa fa-clipboard"></i></span>
@@ -417,7 +413,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目錄</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#新建repository"><span class="toc-number">1.</span> <span class="toc-text">新建repository</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#本地仓库操作"><span class="toc-number">2.</span> <span class="toc-text">本地仓库操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#将本地的仓库关联到github上"><span class="toc-number">3.</span> <span class="toc-text">将本地的仓库关联到github上</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#将远程分支文件拉下来（避免冲突）"><span class="toc-number">4.</span> <span class="toc-text">将远程分支文件拉下来（避免冲突）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建分支"><span class="toc-number">5.</span> <span class="toc-text">创建分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#切换至hexo分支"><span class="toc-number">6.</span> <span class="toc-text">切换至hexo分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#将本地资源同步推到GitHub的Hexo分支（自己创建）"><span class="toc-number">7.</span> <span class="toc-text">将本地资源同步推到GitHub的Hexo分支（自己创建）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo发布"><span class="toc-number"></span> <span class="toc-text">hexo发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改hexo代码后提交"><span class="toc-number"></span> <span class="toc-text">修改hexo代码后提交</span></a>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#新建repository"><span class="toc-number">1.</span> <span class="toc-text">新建repository</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#本地仓库操作"><span class="toc-number">2.</span> <span class="toc-text">本地仓库操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#将本地的仓库关联到github上"><span class="toc-number">3.</span> <span class="toc-text">将本地的仓库关联到github上</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#将远程分支文件拉下来（避免冲突）"><span class="toc-number">4.</span> <span class="toc-text">将远程分支文件拉下来（避免冲突）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建分支"><span class="toc-number">5.</span> <span class="toc-text">创建分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#切换至hexo分支"><span class="toc-number">6.</span> <span class="toc-text">切换至hexo分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#将本地资源同步推到GitHub的Hexo分支（自己创建）"><span class="toc-number">7.</span> <span class="toc-text">将本地资源同步推到GitHub的Hexo分支（自己创建）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo发布"><span class="toc-number"></span> <span class="toc-text">hexo发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改hexo代码后提交"><span class="toc-number"></span> <span class="toc-text">修改hexo代码后提交</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更换电脑后同步管理"><span class="toc-number"></span> <span class="toc-text">更换电脑后同步管理</span></a>
         
     </div>
     <style>
@@ -558,7 +554,7 @@
                 2016 Mr. Kayson
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、簡潔且高效的博客框架">Hexo</a> & <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="簡而不減 Hexo 雙欄博客主題  v3.5">Yelee</a> 
+                <a href="http://hexo.io/" target="_blank" title="快速、簡單且強大的網誌框架">Hexo</a> & <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="簡而不減 Hexo 雙欄網誌主題  v3.5">Yelee</a> 
 		<!--by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>-->
             </div>
         </div>

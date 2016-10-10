@@ -30,10 +30,10 @@
 <h3 id="将本地资源同步推到GitHub的Hexo分支（自己创建）"><a href="#将本地资源同步推到GitHub的Hexo分支（自己创建）" class="headerlink" title="将本地资源同步推到GitHub的Hexo分支（自己创建）"></a>将本地资源同步推到GitHub的Hexo分支（自己创建）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin hexo</div></pre></td></tr></table></figure>
 <p><strong>至此hexo代码已经上传至远程仓库的hexo分支</strong></p>
 <h2 id="hexo发布"><a href="#hexo发布" class="headerlink" title="hexo发布"></a>hexo发布</h2><p>hexo发布和之前没有区别，因为没有切换环境，所以不需要重新安装nodejs、hexo等<br>仍然可使用 hexo g -d  来部署<br><strong>注意</strong> _config.yml 文件依旧需要保持原地址和master分支<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">repository: https://github.com/kaysonyao/kaysonyao.github.io.git</div><div class="line">branch: master</div></pre></td></tr></table></figure></p>
-<h2 id="修改hexo代码后提交"><a href="#修改hexo代码后提交" class="headerlink" title="修改hexo代码后提交"></a>修改hexo代码后提交</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure>
+<h2 id="修改hexo代码后提交"><a href="#修改hexo代码后提交" class="headerlink" title="修改hexo代码后提交"></a>修改hexo代码后提交</h2><p>依次执行下面语句：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">"..."</span></div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin hexo</div></pre></td></tr></table></figure>
-]]></content>
+<h2 id="更换电脑后同步管理"><a href="#更换电脑后同步管理" class="headerlink" title="更换电脑后同步管理"></a>更换电脑后同步管理</h2>]]></content>
     </entry>
     
     <entry>
