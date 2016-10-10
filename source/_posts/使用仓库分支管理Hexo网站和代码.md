@@ -31,12 +31,41 @@ git commit -m "注释语句"
 ```bash
 git remote add origin git@github.com:kaysonyao/kaysonyao.github.io.git
 ```
-### 创建分支并同步
-1. 创建本地hexo分支
+### 将远程分支文件拉下来（避免冲突）
+```bash
+git pull origin master
+```
+### 创建分支
+创建本地hexo分支
 ```bash
 git branch hexo
 ```
-2. 将推到远程分支
+### 切换至hexo分支
 ```bash
-git bran
+git checkout hexo
 ```
+### 将本地资源同步推到GitHub的Hexo分支（自己创建）
+```bash
+git push origin hexo
+```
+**至此hexo代码已经上传至远程仓库的hexo分支**
+## hexo发布
+hexo发布和之前没有区别，因为没有切换环境，所以不需要重新安装nodejs、hexo等
+仍然可使用 hexo g -d  来部署
+**注意** _config.yml 文件依旧需要保持原地址和master分支
+```bash
+  repository: https://github.com/kaysonyao/kaysonyao.github.io.git
+  branch: master
+```
+## 修改hexo代码后提交
+依次执行下面语句：
+```bash
+git add .
+```
+```bash
+git commit -m "..."
+```
+```
+git push origin hexo
+```
+## 更换电脑后同步管理
